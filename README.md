@@ -46,21 +46,26 @@ We recognise that all of these items may not be possible in the time allotted, s
 please document which of these is delivered in your submission.
 
 1. Customer Accounts
+
     /api/v1/customer/<customer guid>/accounts
-        List the account ids (guid) of all accounts for the customer
+    >    List the account ids (guid) of all accounts for the customer
 
 2. Account
+
     /api/v1/account/<account guid>
-        Return all the details of the account specified
+    >   Return all the details of the account specified
 
 3. Account Field
+
     /api/v1/account/<account guid>/<field>
-        Return the field requested for the account specified
+    >   Return the field requested for the account specified
 
 4. Authentication
+
     Please add authentication at this stage
 
 5. Additional Ideas
+
     If you have ideas for endpoints not specified, feel free to implement and describe in your submission
 
     /api/v1/customer/<customer guid>/accounts/?lastname=Smith
