@@ -4,7 +4,7 @@ import json
 
 from django.core.management.base import BaseCommand
 
-from s3_api.models import Account
+from s3_api.models import Account, Customer
 
 
 class Command(BaseCommand):
@@ -31,6 +31,11 @@ class Command(BaseCommand):
         with open(file_name) as account_info:
             accounts = json.load(account_info)['accounts']
 
+            guid = file_name.split('.')[0][2:]
+            customer = Customer.objects.create(
+                    id=guid,
+            )
+
             for account in accounts:
                 # We don't want commas in the balance
                 balance = str(account['balance']).replace(',', '')
@@ -38,6 +43,7 @@ class Command(BaseCommand):
                 # Could look in to bulk_create later to improve efficiency
                 Account.objects.create(
                     id=account['id'],
+                    customer=customer,
                     firstname=account['firstname'],
                     lastname=account['lastname'],
                     email=account['email'],
