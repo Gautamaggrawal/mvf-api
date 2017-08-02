@@ -1,3 +1,4 @@
 -r base.txt
 
 ipython==6.1.0
+pprint==0.1
