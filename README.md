@@ -1,15 +1,15 @@
 # MVF Developer Tests
 ## S3 API
 
-Thanks for your interest in a developer role at MVF.
+This is rather overengineered for the scope of this project - I thought it was a really great challenge. I left a lot of the default views available because I felt there was no reason to disable them. This project satisfies the first 3 deliverables - no authentication due to a time constraint.
 
-We have a simple project which we would like you to take a look at in your own time.
+Additional features include but are not limited to:
+- Functional, lightly customised Django admin GUI
+- DRF GUI responses with PUT, POST forms and alike to test all CRUD operations (raw JSON responses are specified with ?format=json)
+- Data import script (as a Django management command)
 
-You can spend as much or as little time on it as you wish, but if we have asked you to take a look at this, we would usually expect to receive a response in a 3-4 days.
 
-The task is to build a restful API based on data we have in our AWS S3 bucket. You can attempt this in any language you are familiar with - see it as a opportunity to showcase the skills you have which are relevant for the role you want.
-
-How would you implement this? Fork our repo and let us see your ideas!
+I left the original challenge below for reference.
 
 ### Challenge
 Build an API to expose the data in our S3 bucket.
