@@ -1,12 +1,13 @@
 # MVF Developer Tests
 ## S3 API
 
-This is rather overengineered for the scope of this project - I thought it was a really great challenge. I left a lot of the default views available because I felt there was no reason to disable them. This project satisfies the first 3 deliverables - no authentication due to a time constraint.
+This is rather overengineered for the scope of this project - I thought it was a really great challenge. I left a lot of the default views available because I felt there was no reason to disable them. This project satisfies the first 3 deliverables - no authentication due to a time constraint. Also, although I would never normally commit the data files in Git, I thought that was an easy way for you to be able to see exactly what I had.
 
 Additional features include but are not limited to:
-- Functional, lightly customised Django admin GUI
-- DRF GUI responses with PUT, POST forms and alike to test all CRUD operations (raw JSON responses are specified with ?format=json)
-- Data import script (as a Django management command)
+
+* Functional, lightly customised Django admin GUI
+* DRF GUI responses with PUT, POST forms and alike to test all CRUD operations (raw JSON responses are specified with ?format=json)
+* Data import script (as a Django management command)
 
 
 I left the original challenge below for reference.
